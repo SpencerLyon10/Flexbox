@@ -1,0 +1,58 @@
+.image-grid {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.grid-image {
+    display: block;
+    flex-basis: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: .50;
+
+}
+
+h1 {
+font-style: italic;
+text-align: center;
+border: 5px solid black;
+padding: 15px;
+display: flex;
+margin: 10px;
+background:cornflowerblue;
+color: antiquewhite;
+
+}
+
+
+@media only screen and (min-width: 640px) {
+    .grid-image {
+        flex-basis: 50%;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .grid-image {
+        flex-basis: 33.333%;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .grid-image {
+        flex-basis: 25%;
+    }
+}
+
+
+@media only screen and (min-width: 1600px) {
+    .grid-image {
+        flex-basis: 20%;
+    }
+}
